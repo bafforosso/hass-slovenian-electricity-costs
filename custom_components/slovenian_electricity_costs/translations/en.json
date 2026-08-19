@@ -22,7 +22,7 @@
           "energy_vt_price": "High Tariff (VT) Energy Price",
           "energy_mt_price": "Low Tariff (MT) Energy Price",
           "block_1_price": "Network Charge - Block 1",
-          "block_2_price": "Network Charge - Block 2", 
+          "block_2_price": "Network Charge - Block 2",
           "block_3_price": "Network Charge - Block 3",
           "block_4_price": "Network Charge - Block 4",
           "block_5_price": "Network Charge - Block 5",
@@ -33,7 +33,7 @@
           "energy_vt_price": "{energy_vt_desc} - Price per kWh for electrical energy during high tariff period",
           "energy_mt_price": "{energy_mt_desc} - Price per kWh for electrical energy during low tariff period",
           "block_1_price": "{block_1_desc} - Network distribution charge per kWh",
-          "block_2_price": "{block_2_desc} - Network distribution charge per kWh", 
+          "block_2_price": "{block_2_desc} - Network distribution charge per kWh",
           "block_3_price": "{block_3_desc} - Network distribution charge per kWh",
           "block_4_price": "{block_4_desc} - Network distribution charge per kWh",
           "block_5_price": "{block_5_desc} - Network distribution charge per kWh",
@@ -57,21 +57,99 @@
   "options": {
     "step": {
       "init": {
-        "title": "Slovenian Electricity Costs Options", 
+        "title": "Slovenian Electricity Costs Options",
         "description": "Update your electricity pricing configuration.",
         "data": {
           "supplier": "Electricity Supplier",
           "auto_update": "Auto-update prices monthly",
           "energy_vt_price": "High Tariff (VT) Energy Price",
-          "energy_mt_price": "Low Tariff (MT) Energy Price", 
+          "energy_mt_price": "Low Tariff (MT) Energy Price",
           "block_1_price": "Network Charge - Block 1",
           "block_2_price": "Network Charge - Block 2",
-          "block_3_price": "Network Charge - Block 3", 
+          "block_3_price": "Network Charge - Block 3",
           "block_4_price": "Network Charge - Block 4",
           "block_5_price": "Network Charge - Block 5",
           "contributions_price": "Contributions",
           "excise_tax": "Excise Tax"
         }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "electricity_current_tariff_block": {
+        "name": "Electricity Current Tariff Block"
+      },
+      "electricity_current_total_price": {
+        "name": "Electricity Current Total Price"
+      },
+      "electricity_current_energy_tariff": {
+        "name": "Electricity Current Energy Tariff"
+      },
+      "electricity_current_energy_price": {
+        "name": "Electricity Current Energy Price"
+      },
+      "electricity_current_network_price": {
+        "name": "Electricity Current Network Price"
+      },
+      "electricity_contributions": {
+        "name": "Electricity Contributions"
+      },
+      "electricity_excise_tax": {
+        "name": "Electricity Excise Tax"
+      },
+      "electricity_current_season": {
+        "name": "Electricity Current Season"
+      },
+      "electricity_current_holiday_status": {
+        "name": "Electricity Current Holiday Status"
+      },
+      "electricity_total_cost": {
+        "name": "Electricity Total Cost"
+      },
+      "electricity_block_1_price": {
+        "name": "Electricity Block 1 Price"
+      },
+      "electricity_block_2_price": {
+        "name": "Electricity Block 2 Price"
+      },
+      "electricity_block_3_price": {
+        "name": "Electricity Block 3 Price"
+      },
+      "electricity_block_4_price": {
+        "name": "Electricity Block 4 Price"
+      },
+      "electricity_block_5_price": {
+        "name": "Electricity Block 5 Price"
+      }
+    },
+    "binary_sensor": {
+      "electricity_block_1_active": {
+        "name": "Electricity Block 1 Active"
+      },
+      "electricity_block_2_active": {
+        "name": "Electricity Block 2 Active"
+      },
+      "electricity_block_3_active": {
+        "name": "Electricity Block 3 Active"
+      },
+      "electricity_block_4_active": {
+        "name": "Electricity Block 4 Active"
+      },
+      "electricity_block_5_active": {
+        "name": "Electricity Block 5 Active"
+      },
+      "electricity_higher_season": {
+        "name": "Electricity Higher Season"
+      },
+      "electricity_holiday_today": {
+        "name": "Electricity Holiday Today"
+      },
+      "electricity_cheap_rate": {
+        "name": "Electricity Cheap Rate"
+      },
+      "electricity_expensive_rate": {
+        "name": "Electricity Expensive Rate"
       }
     }
   }
