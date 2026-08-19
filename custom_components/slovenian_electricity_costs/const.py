@@ -3,6 +3,7 @@ from datetime import date, datetime, timedelta
 from typing import Dict, List
 
 DOMAIN = "slovenian_electricity_costs"
+VERSION = "1.1.0b1"
 
 # Configuration keys
 CONF_SUPPLIER = "supplier"

@@ -14,7 +14,12 @@ from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .const import DOMAIN, BLOCK_DESCRIPTIONS, SEASON_INFO
+from .const import (
+    DOMAIN,
+    VERSION,
+    BLOCK_DESCRIPTIONS,
+    SEASON_INFO,
+)
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -73,7 +78,7 @@ class TariffBlockBinarySensor(CoordinatorEntity, BinarySensorEntity):
             "name": "Slovenian Electricity Costs",
             "manufacturer": "49jan",
             "model": "Tariff Calculator",
-            "sw_version": "1.1-b",
+            "sw_version": VERSION,
         }
 
     @property
@@ -132,7 +137,7 @@ class HigherSeasonBinarySensor(CoordinatorEntity, BinarySensorEntity):
             "name": "Slovenian Electricity Costs",
             "manufacturer": "49jan",
             "model": "Tariff Calculator",
-            "sw_version": "1.1-b",
+            "sw_version": VERSION,
         }
 
     @property
@@ -182,7 +187,7 @@ class HolidayBinarySensor(CoordinatorEntity, BinarySensorEntity):
             "name": "Slovenian Electricity Costs",
             "manufacturer": "49jan",
             "model": "Tariff Calculator",
-            "sw_version": "1.1-b",
+            "sw_version": VERSION,
         }
 
     @property
@@ -225,7 +230,7 @@ class CheapElectricityBinarySensor(CoordinatorEntity, BinarySensorEntity):
             "name": "Slovenian Electricity Costs",
             "manufacturer": "49jan",
             "model": "Tariff Calculator",
-            "sw_version": "1.1-b",
+            "sw_version": VERSION,
         }
 
     @property
@@ -274,7 +279,7 @@ class ExpensiveElectricityBinarySensor(CoordinatorEntity, BinarySensorEntity):
             "name": "Slovenian Electricity Costs",
             "manufacturer": "49jan",
             "model": "Tariff Calculator",
-            "sw_version": "1.1-b",
+            "sw_version": VERSION,
         }
 
     @property
