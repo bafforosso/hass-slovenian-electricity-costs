@@ -91,7 +91,7 @@ class TariffBlockBinarySensor(CoordinatorEntity, BinarySensorEntity):
         if self.coordinator.data is None:
             return {}
 
-        prices = self.coordinator.data.get("prices", {})
+        prices = self.coordinator.data.get("network_prices", {})
         current_block = self.coordinator.data.get("current_block")
         season = self.coordinator.data.get("season", "lower")
         
