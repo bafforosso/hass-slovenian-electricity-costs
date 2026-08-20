@@ -323,7 +323,7 @@ class TariffBlockPriceSensor(SlovenianElectricityCostsSensorBase):
         if self.coordinator.data is None:
             return None
         
-        prices = self.coordinator.data.get("prices", {})
+        prices = self.coordinator.data.get("network_prices", {})
         return round(prices.get(self._block, 0), 6)
 
     @property
