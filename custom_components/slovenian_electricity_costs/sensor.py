@@ -18,6 +18,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import (
     DOMAIN,
+    VERSION,
     CONF_CONSUMPTION_SENSOR,
     BLOCK_DESCRIPTIONS,
     ENERGY_DESCRIPTIONS,
@@ -88,7 +89,7 @@ class SlovenianElectricityCostsSensorBase(CoordinatorEntity, SensorEntity):
             "name": "Slovenian Electricity Costs",
             "manufacturer": "49jan",
             "model": "Tariff Calculator",
-            "sw_version": "1.1-b",
+            "sw_version": VERSION,
         }
 
 
