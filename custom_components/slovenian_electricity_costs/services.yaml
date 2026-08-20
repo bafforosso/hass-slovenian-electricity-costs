@@ -12,7 +12,8 @@ update_prices:
         number:
           min: 0
           max: 1
-          step: 0.000001
+          step: "any"
+          mode: box
           unit_of_measurement: "€/kWh"
     block_2_price:
       name: Block 2 Price
@@ -22,7 +23,8 @@ update_prices:
         number:
           min: 0
           max: 1
-          step: 0.000001
+          step: "any"
+          mode: box
           unit_of_measurement: "€/kWh"
     block_3_price:
       name: Block 3 Price
@@ -32,7 +34,8 @@ update_prices:
         number:
           min: 0
           max: 1
-          step: 0.000001
+          step: "any"
+          mode: box
           unit_of_measurement: "€/kWh"
     block_4_price:
       name: Block 4 Price
@@ -42,7 +45,8 @@ update_prices:
         number:
           min: 0
           max: 1
-          step: 0.000001
+          step: "any"
+          mode: box
           unit_of_measurement: "€/kWh"
     block_5_price:
       name: Block 5 Price
@@ -52,7 +56,8 @@ update_prices:
         number:
           min: 0
           max: 1
-          step: 0.000001
+          step: "any"
+          mode: box
           unit_of_measurement: "€/kWh"
 
 get_current_block:
