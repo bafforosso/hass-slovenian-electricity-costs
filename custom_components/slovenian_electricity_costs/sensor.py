@@ -138,7 +138,6 @@ class CurrentElectricityPriceSensor(SlovenianElectricityCostsSensorBase):
         self._attr_name = "Electricity Current Total Price"
         self._attr_icon = "mdi:currency-eur"
         self._attr_native_unit_of_measurement = f"{CURRENCY_EURO}/kWh"
-        self._attr_device_class = SensorDeviceClass.MONETARY
         self._attr_state_class = SensorStateClass.MEASUREMENT
 
     @property
@@ -316,7 +315,6 @@ class TariffBlockPriceSensor(SlovenianElectricityCostsSensorBase):
         self._attr_name = f"Electricity Block {block} Price"
         self._attr_icon = "mdi:currency-eur"
         self._attr_native_unit_of_measurement = f"{CURRENCY_EURO}/kWh"
-        self._attr_device_class = SensorDeviceClass.MONETARY
         self._attr_entity_category = EntityCategory.DIAGNOSTIC
 
     @property
@@ -390,7 +388,6 @@ class EnergyPriceSensor(SlovenianElectricityCostsSensorBase):
         self._attr_name = "Electricity Current Energy Price"
         self._attr_icon = "mdi:lightning-bolt-circle"
         self._attr_native_unit_of_measurement = f"{CURRENCY_EURO}/kWh"
-        self._attr_device_class = SensorDeviceClass.MONETARY
         self._attr_state_class = SensorStateClass.MEASUREMENT
 
     @property
@@ -424,7 +421,6 @@ class NetworkPriceSensor(SlovenianElectricityCostsSensorBase):
         self._attr_name = "Electricity Current Network Price"
         self._attr_icon = "mdi:transmission-tower"
         self._attr_native_unit_of_measurement = f"{CURRENCY_EURO}/kWh"
-        self._attr_device_class = SensorDeviceClass.MONETARY
         self._attr_state_class = SensorStateClass.MEASUREMENT
 
     @property
@@ -458,7 +454,6 @@ class ContributionsPriceSensor(SlovenianElectricityCostsSensorBase):
         self._attr_name = "Electricity Contributions"
         self._attr_icon = "mdi:hand-heart"
         self._attr_native_unit_of_measurement = f"{CURRENCY_EURO}/kWh"
-        self._attr_device_class = SensorDeviceClass.MONETARY
         self._attr_state_class = SensorStateClass.MEASUREMENT
 
     @property
@@ -490,7 +485,6 @@ class ExciseTaxSensor(SlovenianElectricityCostsSensorBase):
         self._attr_name = "Electricity Excise Tax"
         self._attr_icon = "mdi:receipt"
         self._attr_native_unit_of_measurement = f"{CURRENCY_EURO}/kWh"
-        self._attr_device_class = SensorDeviceClass.MONETARY
         self._attr_state_class = SensorStateClass.MEASUREMENT
 
     @property
